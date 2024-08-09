@@ -12,17 +12,18 @@ The goal of this project is to clean and transform a dataset of films, making it
 
 ## Directory Structure
 
-- **src/**: Contains the source code for data transformation and pipeline automation.
+- **code/**: Contains the source code for data transformation and pipeline automation.
   - `pipeline.py`: Defines the pipeline stages using Luigi.
-  - `transformations.py`: Contains functions for data transformations.
-  - `config/schema.json`: Schema file used to load and validate the dataset.
-- **data/**: Contains the input and output data.
-  - `input/`: Place the initial dataset here.
-  - `output/`: The transformed data is saved here.
+  - `stage1.py`
+  - `stage2.py`
+  - `task2.py`
+  - `task3.py`
+- **resources/**: Contains the input and output data.
+  - `csv/`: Place the initial dataset here.
+  - `json/`: Contains the schema file used to load and validate the dataset.
+- **output/**: The transformed data is saved here.
 - **tests/**: Contains unit tests for the project.
-  - `test_pipeline.py`: Tests for the pipeline.
-  - `test_transformations.py`: Tests for the data transformations.
-- **requirements.txt**: Lists the Python dependencies.
+  - `test.py`: Tests for the pipeline.
 
 ## Getting Started
 
